@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern, interactive, and fully responsive developer portfolio website showcasing projects, skills, and contact information.">
+    <title>Creative Developer Portfolio</title>
+    <!-- Google Fonts: Poppins (Body) & Outfit (Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar (Step 2) -->
+    <header id="header" class="header">
+        <div class="nav-container container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <i class="fa-solid fa-code"></i> Dev<span>Portfolio</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Toggle Hamburger Menu Button -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main>
+        <!-- Hero Section (Step 3) -->
+        <section id="home" class="hero">
+            <!-- Background Glow Circle -->
+            <div class="hero-glow"></div>
+            
+            <div class="hero-container container">
+                <!-- Text Content (Left Column) -->
+                <div class="hero-content">
+                    <span class="hero-badge"><i class="fa-solid fa-sparkles"></i> Welcome to my portfolio</span>
+                    <h1 class="hero-title">Hi, I'm <span class="gradient-text">Olowookere Prosper Olamide</span></h1>
+                    <h3 class="hero-subtitle">Computer Science Student & Frontend Developer</h3>
+                    <p class="hero-desc">
+                        Passionate about crafting pixel-perfect, highly performant web applications. Currently studying computer science and building responsive, interactive user experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View Projects <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Contact Me <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Profile Image (Right Column) -->
+                <div class="hero-image-area">
+                    <div class="hero-img-box glass-card">
+                        <!-- Profile Image -->
+                        <img src="assets/profile.jpg" alt="Olowookere Prosper Olamide" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Step 4) -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About <span>Me</span></h2>
+                
+                <div class="about-grid">
+                    <!-- Left Column (Professional Intro & Story) -->
+                    <div class="about-info">
+                        <span class="info-badge">My Story</span>
+                        <h3 class="about-subtitle">Building Modern Digital Solutions</h3>
+                        <p class="about-text">
+                            I am a Computer Science student with a growing passion for building modern, user-focused digital solutions. My journey into technology began with a curiosity about how websites and applications work behind the scenes, which gradually evolved into a commitment to learning software development and creating real-world projects.
+                        </p>
+                        <p class="about-text">
+                            As I continued exploring the field, I developed a strong interest in frontend development, where I enjoy transforming ideas into responsive, interactive, and visually appealing user experiences. At the same time, I have been expanding my skills toward full-stack development to gain a deeper understanding of both client-side and server-side technologies, enabling me to build complete web applications from concept to deployment.
+                        </p>
+                        <p class="about-text">
+                            Beyond coding, I enjoy learning through practical projects, exploring emerging technologies, and continuously improving my problem-solving abilities. I am passionate about creating solutions that make a meaningful impact while growing as a developer and technology professional.
+                        </p>
+                        
+                        <div class="about-action">
+                            <a href="#" class="btn btn-primary" download>
+                                Download Resume <i class="fa-solid fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column (Journey, Focus, Goals Cards Stack) -->
+                    <div class="about-cards-stack">
+                        <!-- Journey Card -->
+                        <div class="info-card glass-card">
+                            <div class="card-icon"><i class="fa-solid fa-compass"></i></div>
+                            <div class="card-text">
+                                <h4>My Journey</h4>
+                                <p>
+                                    My interest in software engineering began with a curiosity about how websites and digital products are built. What started as learning basic programming concepts gradually evolved into a passion for creating real-world solutions. As a Computer Science student, I have continued to strengthen my foundation in software development through hands-on projects, problem-solving, and continuous learning.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Interests Card -->
+                        <div class="info-card glass-card">
+                            <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <div class="card-text">
+                                <h4>Frontend & Full-Stack Focus</h4>
+                                <p>
+                                    I am passionate about frontend development and creating responsive, user-friendly web experiences. I enjoy working with HTML, CSS, JavaScript, and modern frameworks to transform ideas into interactive applications. As I progress toward full-stack development, I am expanding my knowledge of backend technologies, databases, and APIs to build complete, scalable web solutions.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Goals Card -->
+                        <div class="info-card glass-card">
+                            <div class="card-icon"><i class="fa-solid fa-trophy"></i></div>
+                            <div class="card-text">
+                                <h4>Aspirations & Legacy</h4>
+                                <p>
+                                    My goal is to become a respected full-stack software engineer and technology builder who creates impactful digital products. I aspire to combine technical expertise, creativity, and leadership to solve real-world problems, achieve financial independence, contribute to the growth of the tech community, and build a legacy through innovation and meaningful work.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section (Step 5) -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">My <span>Skills</span></h2>
+                
+                <div class="skills-grid">
+                    <!-- Frontend Card -->
+                    <div class="skills-card glass-card">
+                        <div class="skills-header">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                            <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                            <li><i class="fa-brands fa-react"></i> React</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Backend Card -->
+                    <div class="skills-card glass-card">
+                        <div class="skills-header">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+                            <li><i class="fa-solid fa-database"></i> Databases</li>
+                            <li><i class="fa-solid fa-gears"></i> REST APIs</li>
+                            <li><i class="fa-solid fa-shield-halved"></i> Express</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Programming Languages Card -->
+                    <div class="skills-card glass-card">
+                        <div class="skills-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Programming</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><i class="fa-brands fa-js"></i> JavaScript (ES6)</li>
+                            <li><i class="fa-brands fa-python"></i> Python</li>
+                            <li><i class="fa-solid fa-file-code"></i> C++</li>
+                            <li><i class="fa-solid fa-database"></i> SQL</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Tools Card -->
+                    <div class="skills-card glass-card">
+                        <div class="skills-header">
+                            <i class="fa-solid fa-toolbox"></i>
+                            <h3>Tools & Methods</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><i class="fa-brands fa-git-alt"></i> Git & GitHub</li>
+                            <li><i class="fa-solid fa-terminal"></i> VS Code</li>
+                            <li><i class="fa-brands fa-figma"></i> Figma UI/UX</li>
+                            <li><i class="fa-solid fa-list-check"></i> Agile Methods</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Step 6) -->
+        <!-- Contact Section & Footer (Step 7) -->
+    </main>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
